@@ -18,8 +18,4 @@ export class LugarDestinoDto {
     @IsNotEmpty()
     coordenadas: string;
 
-    @IsString()
-    @IsNotEmpty()
-    descripcion: string;
-
 }

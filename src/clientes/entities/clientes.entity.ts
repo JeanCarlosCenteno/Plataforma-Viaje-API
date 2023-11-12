@@ -31,7 +31,7 @@ export class Clientes {
   certificado_vacunacion: string;
 
   @Column({ type: 'varchar', length: 100, nullable: false })
-  fecha_vencimineto_pasaporte: Date;
+  fecha_vencimiento_pasaporte: Date;
 
   @Column({ type: 'varchar', length: 100, nullable: false })
   direcion_de_destino: string;

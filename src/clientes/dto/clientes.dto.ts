@@ -40,7 +40,7 @@ export class ClientesDto {
 
     @IsDate()
     @IsOptional()
-    fecha_vencimineto_pasaporte: Date;
+    fecha_vencimiento_pasaporte: Date;
 
     @IsString()
     @IsNotEmpty()

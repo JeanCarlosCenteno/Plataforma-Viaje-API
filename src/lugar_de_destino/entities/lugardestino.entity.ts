@@ -14,8 +14,5 @@ export class LugarDestino {
 
   @Column({ type: 'varchar', length: 100, nullable: false })
   coordenadas: string;
-
-  @Column({ type: 'varchar', length: 100, nullable: false })
-  descripcion: string;
  
 }
