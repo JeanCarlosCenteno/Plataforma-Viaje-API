@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { LugarDestinoModule } from './lugar_de_destino/lugardestino.module';
+import { PagosVuelo } from './pagos_de_vuelo/entities/pagosvuelo.entity';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { LugarDestinoModule } from './lugar_de_destino/lugardestino.module';
     }),
     UsersModule,
     LugarDestinoModule,
+    PagosVuelo,
   ],
   controllers: [AppController],
   providers: [AppService],
