@@ -1,10 +1,17 @@
+import { ClientesModule } from './clientes/clientes.module';
+import { PagosVueloModule } from './pagos_de_vuelo/pagosvuelo.module';
+import { LugarDestinoModule } from './lugar_de_destino/lugardestino.module';
+import { CategoriasVueloModule } from './categorias_de_vuelo/categoriasvuelo.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { AeropuertosModule } from './aeropuertos/aeropuertos.module';
+import { FilesModule } from './files/files.module';
 import { UsersModule } from './users/users.module';
-import { LugarDestinoModule } from './lugar_de_destino/lugardestino.module';
-import { PagosVuelo } from './pagos_de_vuelo/entities/pagosvuelo.entity';
+import { PistasModule } from './pistas_aterrizajes/pistas.module';
+import { PromoTuristicModule } from './promociones_turisticas/promoturistic.module';
+
 
 @Module({
   imports: [
@@ -18,9 +25,15 @@ import { PagosVuelo } from './pagos_de_vuelo/entities/pagosvuelo.entity';
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
-    UsersModule,
+    AeropuertosModule,
+    CategoriasVueloModule,
+    FilesModule,
     LugarDestinoModule,
-    PagosVuelo,
+    PagosVueloModule,
+    UsersModule,
+    PistasModule,
+    PromoTuristicModule,
+    ClientesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

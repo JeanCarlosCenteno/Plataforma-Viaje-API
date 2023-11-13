@@ -2,11 +2,10 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PromoTuristicController } from './controller/promoturistic.controller';
 import { PromoTuristicService } from './services/promoturistic.service';
-
-
+import { PromoTuristic } from './entities/promoturistic.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([PromoTuristicModule])],
+  imports: [TypeOrmModule.forFeature([PromoTuristic])],
   controllers: [PromoTuristicController],
   providers: [PromoTuristicService],
 })

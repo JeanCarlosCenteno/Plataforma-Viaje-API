@@ -2,8 +2,6 @@ import {Body,Controller,Delete,Get,Param,ParseIntPipe, Post, Put,} from '@nestjs
 import { ClientesService } from '../services/clientes.service';
 import { ClientesDto } from '../dto/clientes.dto';
 
-
-  
   @Controller('clientes')
   export class ClientesController {
     constructor(private readonly clientesService: ClientesService) {}
